@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 import {classNames} from '@shopify/react-utilities/styles';
-import {autobind, memoize} from '@shopify/javascript-utilities/decorators';
+import {autobind} from '@shopify/javascript-utilities/decorators';
 import {navigationBarCollapsed} from '../../../../utilities/breakpoints';
 
 import {Context, contextTypes} from '../../types';
@@ -271,7 +271,6 @@ export class BaseItem extends React.Component<CombinedProps, State> {
   }
 
   @autobind
-  @memoize()
   private getClickHandler(onClick: Props['onClick']) {
     return (event: React.MouseEvent<HTMLElement>) => {
       const {currentTarget} = event;

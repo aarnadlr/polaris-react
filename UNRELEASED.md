@@ -22,4 +22,6 @@ Use [the changelog guidelines](https://git.io/polaris-changelog-guidelines) to f
 
 ### Code quality
 
+- Remove `memoize` usages ([#1146](https://github.com/Shopify/polaris-react/pull/1146))
+
 ### Deprecations
